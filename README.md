@@ -14,5 +14,3 @@
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=nguyenvulong&show_icons=true&locale=en&theme=onedark" alt="nguyenvulong" /></p>
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=nguyenvulong&theme=onedark" alt="nguyenvulong" /></p>
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=nguyenvulong&theme=onedark)](https://github.com/anuraghazra/github-readme-stats)
