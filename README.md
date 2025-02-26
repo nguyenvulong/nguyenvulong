@@ -10,8 +10,3 @@
   <span style="margin: 0 10px;"> </span> 
   <img src="https://github-readme-stats.vercel.app/api?username=nguyenvulong&show_icons=true&locale=en&theme=onedark" height="250px" />
 </p>
-
-
-<p align="center">
-  <a href="https://data.typeracer.com/pit/profile?user=darkboy&ref=badge" target="_top"><img src="https://data.typeracer.com/misc/badge?user=darkboy" border="0" alt="TypeRacer.com scorecard for user Long"/></a>
-</p>
