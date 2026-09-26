@@ -164,7 +164,7 @@ text{{font-family:{MONO};}}
   </g>
   <g font-size="{size}" font-weight="700" text-anchor="middle">{"".join(chars)}</g>
   <text x="{W / 2}" y="252" text-anchor="middle" font-size="22" font-weight="700" letter-spacing="9" fill="url(#nameGrad)">AI  ×  CYBERSECURITY</text>
-  <text x="{W / 2}" y="292" text-anchor="middle" font-size="14" letter-spacing="1.5" fill="#c7d2fe" fill-opacity=".75">where neural networks meet threat models</text>
+  <text x="{W / 2}" y="292" text-anchor="middle" font-size="14" letter-spacing="1.5" fill="#c7d2fe" fill-opacity=".75">AI for security · security for AI</text>
   <text x="{W - 24}" y="{H - 20}" text-anchor="end" font-size="11" fill="#fff" fill-opacity=".35">SEOUL · KR · 37.56°N 126.97°E</text>
   <text x="24" y="30" font-size="11" fill="#fff" fill-opacity=".35">sig: 0x4C4F4E47 · pgp ok</text>
 </g>
@@ -319,7 +319,7 @@ def battle():
   <!-- HUD -->
   <g font-size="13" letter-spacing="2">
     <text x="40" y="44" fill="{CYAN}" font-weight="700">BLUE TEAM</text>
-    <text x="40" y="64" fill="#94a3b8" font-size="11">// soc · appsec · ai-sec</text>
+    <text x="40" y="64" fill="#94a3b8" font-size="11">// secops · appsec · ai-sec</text>
     <rect x="40" y="76" width="240" height="8" rx="4" fill="#fff" fill-opacity=".08"/>
     <rect x="40" y="76" width="232" height="8" rx="4" fill="{CYAN}">
       <animate attributeName="width" dur="{T}s" repeatCount="indefinite" values="232;232;224;232;232;226;232;232;220;232;232" keyTimes="{kt(0, hits[0], hits[0] + .01, hits[0] + .1, hits[1], hits[1] + .01, hits[1] + .1, hits[2], hits[2] + .01, hits[2] + .1, 1)}"/></rect>
@@ -400,12 +400,12 @@ def terminal():
     lines = [
         ("cmd", "./whoami --verbose"),
         ("out", [("  handle   : ", "#94a3b8"), ("nguyenvulong", CYAN)]),
-        ("out", [("  class    : ", "#94a3b8"), ("soc analyst // researcher", "#e2e8f0")]),
-        ("out", [("  focus    : ", "#94a3b8"), ("SOC · AppSec · AI Sec", PINK)]),
-        ("cmd", "./triage --queue=live"),
-        ("out", [("  [ FP ] ", "#4ade80"), ("#4821 phishing_link ...... closed", "#e2e8f0")]),
-        ("out", [("  [HIGH] ", RED), ("#4822 impossible_travel .. escalated", "#e2e8f0")]),
-        ("out", [("  [WARN] ", "#facc15"), ("coffee level ............. low", "#e2e8f0")]),
+        ("out", [("  class    : ", "#94a3b8"), ("engineer // researcher", "#e2e8f0")]),
+        ("out", [("  focus    : ", "#94a3b8"), ("AI for SecOps · AI Security", PINK)]),
+        ("cmd", "./ai_triage --queue=soc"),
+        ("out", [("  [AUTO] ", "#4ade80"), ("#4821 phishing_link .... benign", "#e2e8f0")]),
+        ("out", [("  [HIGH] ", RED), ("#4822 impossible_travel  → analyst", "#e2e8f0")]),
+        ("out", [("  [WARN] ", "#facc15"), ("coffee level ........... low", "#e2e8f0")]),
     ]
     prompt = [("long", CYAN), ("@", "#64748b"), ("sentinel", VIOLET), (":~$ ", "#64748b")]
     plen = sum(len(s) for s, _ in prompt)
@@ -549,7 +549,7 @@ def status():
   <text x="{W - 24}" y="22" fill="{PINK}" text-anchor="end" style="font-size:11px">● REC<animate attributeName="opacity" values="1;.2;1" dur="1.2s" repeatCount="indefinite"/></text>
   {row(rows_y[0], "SIEM FEED", "INGESTING", "#4ade80")}
   {"".join(eq)}
-  {row(rows_y[1], "ALERT TRIAGE", "ACTIVE", CYAN)}
+  {row(rows_y[1], "TRIAGE AGENT", "ONLINE", CYAN)}
   <line x1="430" y1="{rows_y[1] - 5}" x2="{W - 30}" y2="{rows_y[1] - 5}" stroke="{CYAN}" stroke-width="3" stroke-dasharray="10 10" class="flow"/>
   {row(rows_y[2], "THREAT LEVEL", "NOMINAL", "#facc15")}
   {"".join(seg)}

@@ -43,7 +43,7 @@
   <!-- HUD -->
   <g font-size="13" letter-spacing="2">
     <text x="40" y="44" fill="#22d3ee" font-weight="700">BLUE TEAM</text>
-    <text x="40" y="64" fill="#94a3b8" font-size="11">// soc · appsec · ai-sec</text>
+    <text x="40" y="64" fill="#94a3b8" font-size="11">// secops · appsec · ai-sec</text>
     <rect x="40" y="76" width="240" height="8" rx="4" fill="#fff" fill-opacity=".08"/>
     <rect x="40" y="76" width="232" height="8" rx="4" fill="#22d3ee">
       <animate attributeName="width" dur="8s" repeatCount="indefinite" values="232;232;224;232;232;226;232;232;220;232;232" keyTimes="0;0.15;0.16;0.25;0.4;0.41;0.5;0.6;0.61;0.7;1"/></rect>

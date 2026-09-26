@@ -28,11 +28,6 @@
 <div align="left">
 
 ```text
-[ current mission ]
-
-  SOC ops ........... alert triage · investigation · incident response
-  learning .......... AppSec · AI security
-
 [ selected transmissions ]
 
   2025  SpaceNet ............ multimodal sound source localization   · Sensors
@@ -42,6 +37,12 @@
   2021  AdMat ............... CNN-on-matrix Android malware          · IEEE Access
   2019  Fragmentation ....... Android malware detection              · Computers & Security
   2017  Rooting Arms Race ... evasion vs. detection                  · SCN
+
+[ now building ]
+
+  AI for SecOps ....... AI that helps SOCs triage and investigate alerts
+  AI Security ......... keeping models safe from injection & abuse
+  AppSec .............. securing the software around them
 
 [ payloads ]
 
