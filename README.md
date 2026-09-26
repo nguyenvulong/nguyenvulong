@@ -38,6 +38,13 @@
   2019  Fragmentation ....... Android malware detection              · Computers & Security
   2017  Rooting Arms Race ... evasion vs. detection                  · SCN
 
+[ now building ]
+
+  AI for SecOps ....... AI that helps SOCs triage and investigate alerts
+  AI Security ......... keeping models safe from injection & abuse
+  Agent IAM ........... identity & least privilege for AI agents
+  AppSec .............. securing the software around them
+
 [ payloads ]
 
   devenv-linux ····· devenv-macos ····· devenv-windows (it's WSL. shh.)
