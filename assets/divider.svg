@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 28" width="1200" height="28" aria-hidden="true">
+<defs>
+  <linearGradient id="ln" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1200" y2="0" spreadMethod="repeat">
+    <stop offset="0" stop-color="#22d3ee" stop-opacity="0"/><stop offset=".2" stop-color="#22d3ee"/><stop offset=".5" stop-color="#8b5cf6"/><stop offset=".8" stop-color="#ec4899"/><stop offset="1" stop-color="#ec4899" stop-opacity="0"/>
+  </linearGradient>
+  <filter id="g" x="-300%" y="-300%" width="700%" height="700%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<line x1="0" y1="14" x2="1200" y2="14" stroke="url(#ln)" stroke-width="1.5"/>
+<line x1="0" y1="14" x2="1200" y2="14" stroke="url(#ln)" stroke-width="1" stroke-dasharray="2 14" opacity=".8" transform="translate(0,-4)"/>
+<rect x="296" y="10" width="8" height="8" transform="rotate(45 300 14)" fill="#070a18" stroke="url(#ln)" stroke-width="1.5"/><rect x="596" y="10" width="8" height="8" transform="rotate(45 600 14)" fill="#070a18" stroke="url(#ln)" stroke-width="1.5"/><rect x="896" y="10" width="8" height="8" transform="rotate(45 900 14)" fill="#070a18" stroke="url(#ln)" stroke-width="1.5"/>
+<circle r="3" cy="14" fill="#22d3ee" filter="url(#g)"><animate attributeName="cx" values="-20;1220" dur="5s" begin="-0.0s" repeatCount="indefinite"/></circle><circle r="3" cy="14" fill="#ec4899" filter="url(#g)"><animate attributeName="cx" values="-20;1220" dur="7s" begin="-1.7s" repeatCount="indefinite"/></circle><circle r="3" cy="14" fill="#8b5cf6" filter="url(#g)"><animate attributeName="cx" values="-20;1220" dur="6s" begin="-3.4s" repeatCount="indefinite"/></circle><circle r="2" cy="14" fill="#fff" filter="url(#g)"><animate attributeName="cx" values="-20;1220" dur="9s" begin="-5.1s" repeatCount="indefinite"/></circle>
+</svg>

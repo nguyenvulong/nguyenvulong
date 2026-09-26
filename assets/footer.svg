@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 220" width="1200" height="220" role="img" aria-label="stay curious, stay paranoid">
+<title>stay curious · stay paranoid</title>
+<defs>
+  <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset=".5" stop-color="#8b5cf6"/><stop offset="1" stop-color="#ec4899"/></linearGradient>
+  <linearGradient id="t" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="600" y2="0" spreadMethod="repeat">
+    <stop offset="0" stop-color="#22d3ee"/><stop offset=".33" stop-color="#8b5cf6"/><stop offset=".66" stop-color="#ec4899"/><stop offset="1" stop-color="#22d3ee"/>
+    <animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="600 0" dur="6s" repeatCount="indefinite"/>
+  </linearGradient>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <style>
+    .beat{transform-box:fill-box;transform-origin:center;animation:beat 1.6s ease-in-out infinite;}
+    @keyframes beat{0%,100%{transform:scale(1)}14%{transform:scale(1.12)}28%{transform:scale(1)}42%{transform:scale(1.08)}70%{transform:scale(1)}}
+    .ring{transform-box:fill-box;transform-origin:center;animation:ring 3.2s ease-out infinite;}
+    @keyframes ring{0%{transform:scale(.6);opacity:.8}100%{transform:scale(1.8);opacity:0}}
+  </style>
+</defs>
+<circle class="ring" cx="600.0" cy="92" r="44" fill="none" stroke="url(#g)" stroke-width="2"/>
+<circle class="ring" cx="600.0" cy="92" r="44" fill="none" stroke="url(#g)" stroke-width="2" style="animation-delay:-1.6s"/>
+<g class="beat" filter="url(#glow)">
+  <path d="M600.0 48L634.0 62V94C634.0 118 616.0 132 600.0 140C584.0 132 566.0 118 566.0 94V62Z" fill="#070a18" fill-opacity=".85" stroke="url(#g)" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="588.0" y="90" width="24" height="20" rx="4" fill="url(#g)"/>
+  <path d="M593.0 90V83A7 7 0 0 1 607.0 83V90" fill="none" stroke="url(#g)" stroke-width="3"/>
+  <circle cx="600.0" cy="99" r="2.5" fill="#070a18"/>
+</g>
+<text x="600.0" y="204" text-anchor="middle" fill="url(#t)" style="font-family:'JetBrains Mono','Fira Code','SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:16px;letter-spacing:6px;font-weight:700">STAY CURIOUS · STAY PARANOID</text>
+</svg>
