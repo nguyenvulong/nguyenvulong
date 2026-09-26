@@ -164,7 +164,7 @@ text{{font-family:{MONO};}}
   </g>
   <g font-size="{size}" font-weight="700" text-anchor="middle">{"".join(chars)}</g>
   <text x="{W / 2}" y="252" text-anchor="middle" font-size="22" font-weight="700" letter-spacing="9" fill="url(#nameGrad)">AI  ×  CYBERSECURITY</text>
-  <text x="{W / 2}" y="292" text-anchor="middle" font-size="14" letter-spacing="1.5" fill="#c7d2fe" fill-opacity=".75">teaching machines to spot threats — and threats to fear machines</text>
+  <text x="{W / 2}" y="292" text-anchor="middle" font-size="14" letter-spacing="1.5" fill="#c7d2fe" fill-opacity=".75">where neural networks meet threat models</text>
   <text x="{W - 24}" y="{H - 20}" text-anchor="end" font-size="11" fill="#fff" fill-opacity=".35">SEOUL · KR · 37.56°N 126.97°E</text>
   <text x="24" y="30" font-size="11" fill="#fff" fill-opacity=".35">sig: 0x4C4F4E47 · pgp ok</text>
 </g>
@@ -255,9 +255,9 @@ def battle():
 
     logs = [
         ("RED", "prompt_injection", "BLOCKED", hits[0]),
-        ("RED", "adversarial_noise", "DENOISED", hits[1]),
+        ("RED", "sqli_payload", "SANITIZED", hits[1]),
         ("RED", "deepfake_voice", "DETECTED", hits[2]),
-        ("BLUE", "counter_measure", "NEUTRALIZED", chit),
+        ("BLUE", "incident_response", "CONTAINED", chit),
     ]
     log_svg = []
     for idx, (who, what, res, t) in enumerate(logs):
@@ -319,7 +319,7 @@ def battle():
   <!-- HUD -->
   <g font-size="13" letter-spacing="2">
     <text x="40" y="44" fill="{CYAN}" font-weight="700">BLUE TEAM</text>
-    <text x="40" y="64" fill="#94a3b8" font-size="11">// guardian.ai · defense</text>
+    <text x="40" y="64" fill="#94a3b8" font-size="11">// soc · appsec · ai-sec</text>
     <rect x="40" y="76" width="240" height="8" rx="4" fill="#fff" fill-opacity=".08"/>
     <rect x="40" y="76" width="232" height="8" rx="4" fill="{CYAN}">
       <animate attributeName="width" dur="{T}s" repeatCount="indefinite" values="232;232;224;232;232;226;232;232;220;232;232" keyTimes="{kt(0, hits[0], hits[0] + .01, hits[0] + .1, hits[1], hits[1] + .01, hits[1] + .1, hits[2], hits[2] + .01, hits[2] + .1, 1)}"/></rect>
@@ -400,12 +400,12 @@ def terminal():
     lines = [
         ("cmd", "./whoami --verbose"),
         ("out", [("  handle   : ", "#94a3b8"), ("nguyenvulong", CYAN)]),
-        ("out", [("  class    : ", "#94a3b8"), ("researcher // builder", "#e2e8f0")]),
-        ("out", [("  domain   : ", "#94a3b8"), ("AI × CyberSecurity", PINK)]),
-        ("cmd", "./threat_scan --realtime"),
-        ("out", [("  [ OK ] ", "#4ade80"), ("adversarial robustness .. armed", "#e2e8f0")]),
-        ("out", [("  [ OK ] ", "#4ade80"), ("deepfake detector ....... on", "#e2e8f0")]),
-        ("out", [("  [WARN] ", "#facc15"), ("coffee level ............ low", "#e2e8f0")]),
+        ("out", [("  class    : ", "#94a3b8"), ("soc analyst // researcher", "#e2e8f0")]),
+        ("out", [("  focus    : ", "#94a3b8"), ("SOC · AppSec · AI Sec", PINK)]),
+        ("cmd", "./triage --queue=live"),
+        ("out", [("  [ FP ] ", "#4ade80"), ("#4821 phishing_link ...... closed", "#e2e8f0")]),
+        ("out", [("  [HIGH] ", RED), ("#4822 impossible_travel .. escalated", "#e2e8f0")]),
+        ("out", [("  [WARN] ", "#facc15"), ("coffee level ............. low", "#e2e8f0")]),
     ]
     prompt = [("long", CYAN), ("@", "#64748b"), ("sentinel", VIOLET), (":~$ ", "#64748b")]
     plen = sum(len(s) for s, _ in prompt)
@@ -547,13 +547,13 @@ def status():
   <rect width="{W}" height="34" fill="#fff" fill-opacity=".04"/>
   <text x="24" y="22" fill="#e2e8f0" letter-spacing="4" font-weight="700" style="font-size:12px">SYSTEM STATUS</text>
   <text x="{W - 24}" y="22" fill="{PINK}" text-anchor="end" style="font-size:11px">● REC<animate attributeName="opacity" values="1;.2;1" dur="1.2s" repeatCount="indefinite"/></text>
-  {row(rows_y[0], "NEURAL CORE", "ONLINE", "#4ade80")}
+  {row(rows_y[0], "SIEM FEED", "INGESTING", "#4ade80")}
   {"".join(eq)}
-  {row(rows_y[1], "FIREWALL", "ENFORCING", CYAN)}
+  {row(rows_y[1], "ALERT TRIAGE", "ACTIVE", CYAN)}
   <line x1="430" y1="{rows_y[1] - 5}" x2="{W - 30}" y2="{rows_y[1] - 5}" stroke="{CYAN}" stroke-width="3" stroke-dasharray="10 10" class="flow"/>
   {row(rows_y[2], "THREAT LEVEL", "NOMINAL", "#facc15")}
   {"".join(seg)}
-  {row(rows_y[3], "ENCRYPTION", "AES-256-GCM", VIOLET)}
+  {row(rows_y[3], "LLM GUARDRAILS", "ENFORCED", VIOLET)}
   <g transform="translate({W - 60},{rows_y[3] - 5})"><circle class="spin" r="11" fill="none" stroke="{VIOLET}" stroke-width="3" stroke-dasharray="20 50" stroke-linecap="round"/>
     <circle r="4" fill="{VIOLET}"/></g>
   <g clip-path="url(#ecgc)"><g class="ecg"><path transform="translate(24,272)" d="{ecg_d}" fill="none" stroke="url(#ecgG)" stroke-width="2" filter="url(#glow)"/></g></g>

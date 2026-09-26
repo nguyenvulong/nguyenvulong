@@ -28,6 +28,11 @@
 <div align="left">
 
 ```text
+[ current mission ]
+
+  SOC ops ........... alert triage · investigation · incident response
+  learning .......... AppSec · AI security
+
 [ selected transmissions ]
 
   2025  SpaceNet ............ multimodal sound source localization   · Sensors
