@@ -255,7 +255,7 @@ def battle():
 
     logs = [
         ("RED", "prompt_injection", "BLOCKED", hits[0]),
-        ("RED", "sqli_payload", "SANITIZED", hits[1]),
+        ("RED", "agent_priv_escalation", "DENIED", hits[1]),
         ("RED", "deepfake_voice", "DETECTED", hits[2]),
         ("BLUE", "incident_response", "CONTAINED", chit),
     ]
@@ -401,7 +401,7 @@ def terminal():
         ("cmd", "./whoami --verbose"),
         ("out", [("  handle   : ", "#94a3b8"), ("nguyenvulong", CYAN)]),
         ("out", [("  class    : ", "#94a3b8"), ("engineer // researcher", "#e2e8f0")]),
-        ("out", [("  focus    : ", "#94a3b8"), ("AI for SecOps · AI Security", PINK)]),
+        ("out", [("  focus    : ", "#94a3b8"), ("SecOps AI · AI Sec · Agent IAM", PINK)]),
         ("cmd", "./ai_triage --queue=soc"),
         ("out", [("  [AUTO] ", "#4ade80"), ("#4821 phishing_link .... benign", "#e2e8f0")]),
         ("out", [("  [HIGH] ", RED), ("#4822 impossible_travel  → analyst", "#e2e8f0")]),

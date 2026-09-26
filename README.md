@@ -42,6 +42,7 @@
 
   AI for SecOps ....... AI that helps SOCs triage and investigate alerts
   AI Security ......... keeping models safe from injection & abuse
+  Agent IAM ........... identity & least privilege for AI agents
   AppSec .............. securing the software around them
 
 [ payloads ]
